@@ -13,10 +13,13 @@ body {
 }
 .header {
   background-color: #fff;
-  padding: 20px;
-  display: flex;
+  padding: 4px;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
 }
 .logo {
   width: 150px;
@@ -39,7 +42,7 @@ body {
   background-image: url(bg.jpg);
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 180px 0;
   text-align: center;
   color: #fff;
 }
@@ -79,7 +82,7 @@ body {
   padding-right: 200px;
 }
 .au {
-  width: 400px;
+  width: 430px;
   height: auto;
 }
 .abu {
@@ -95,7 +98,8 @@ body {
   align-items: center;
 }
 .city-card {
-  width: 300px;
+  width: 400px;
+  height: 500px;
   text-align: center;
   padding: 20px;
   background-color: #fff;
@@ -115,10 +119,42 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
+footer{
+  position: relative;
+  width: 100%;
+  padding: 20px 50px;
+  background: #989898;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+.social{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.social li{
+  list-style: none;
+}
+.social li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
